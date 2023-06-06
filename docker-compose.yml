@@ -24,10 +24,6 @@ services:
       - '4443:4443'
       - '4444:4444'
 
-volumes:
-  allure-results:
-
-    - ./test/allure-results:/allure-results
 
 networks:
   selenium:
