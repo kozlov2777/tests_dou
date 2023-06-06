@@ -13,8 +13,6 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
     ports:
       - '7900:7900'
-    volumes:
-      - ./test/allure-results:/ allure-results
 
   selenium-hub:
     image: selenium/hub:latest
@@ -28,6 +26,8 @@ services:
 
 volumes:
   allure-results:
+
+    - ./test/allure-results:/allure-results
 
 networks:
   selenium:
