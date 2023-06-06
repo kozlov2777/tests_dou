@@ -14,7 +14,7 @@ services:
     ports:
       - '7900:7900'
     volumes:
-      - allure-results:/allure-results/
+      - ./test/allure-results:/allure-results
 
   selenium-hub:
     image: selenium/hub:latest
