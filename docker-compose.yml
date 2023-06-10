@@ -2,10 +2,11 @@ version: '3'
 
 services:
   allure_test_results:
-    image: allure/allure-docker-service
+    image: frankescobar/allure-docker-service-ui
     volumes:
-      - ./tests_dou:/tests_dou
-    command: serve /tests_dou/allure-results
+      - ./tests_dou/allure-results:/allure-results
+    ports:
+      - '5050:5050'
 
   chrome:
     image: selenium/node-chrome:latest
