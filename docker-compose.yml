@@ -4,7 +4,7 @@ services:
   allure_test_results:
     image: frankescobar/allure-docker-service-ui
     volumes:
-      - ./tests_dou/allure-results:/allure-results
+      - ./allure-results:/allure-results
     ports:
       - '5050:5050'
 
