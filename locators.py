@@ -8,7 +8,7 @@ class MainPagesLocators:
 
 
 class JobPagesLocators:
-    QA_ON_JOB_PAGE = (By.XPATH, '//*[@id="container"]/div[3]/div/div[2]/div[2]/div[1]/ul[1]/li[5]/a')
+    QA_ON_JOB_PAGE = (By.XPATH, '//*[@id="container"]/div[2]/div/div[2]/div[2]/div[1]/ul[1]/li[5]/a')
     CITY_FILTER_ON_JOB_PAGE = (By.CSS_SELECTOR, '#container > div.content-wrap > div > div.row.m-db > div.cell.m-db > div > div.row > div:nth-child(3) > div > div > ul:nth-child(5) > li:nth-child(1) > a')
     EXPERIENCE_FILTER_ON_JOB_PAGE = (By.XPATH, '//*[@id="container"]/div[2]/div/div[2]/div[1]/div/div[2]/div[3]/div/div/ul[1]/li[2]/a[1]')
     CITY_IN_JOB_VACANCY = (By.CLASS_NAME, 'cities')
