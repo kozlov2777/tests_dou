@@ -14,4 +14,6 @@ RUN wget https://github.com/allure-framework/allure2/releases/download/2.14.0/al
 
 VOLUME /allure_test_results
 
-CMD ["sh", "-c", "pytest -vv -s --alluredir=/allure_test_results && allure/bin/allure generate --clean /allure_test_results -o /allure_report"]
+ENV ALLURE_RESULTS_DIRECTORY=/allure_test_results/allure-results
+
+CMD ["sh", "-c", "pytest -vv -s --alluredir=$ALLURE_RESULTS_DIRECTORY && allure/bin/allure generate --clean $ALLURE_RESULTS_DIRECTORY -o /allure_report"]
