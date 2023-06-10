@@ -7,6 +7,7 @@ services:
       - ./allure-results:/allure-results
     ports:
       - '5050:5050'
+    command: allure serve /allure-results
 
   chrome:
     image: selenium/node-chrome:latest
@@ -35,8 +36,3 @@ services:
 networks:
   selenium:
     name: selenium
-
-build:
-  context: .
-  dockerfile: Dockerfile
-
