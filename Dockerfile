@@ -6,5 +6,5 @@ RUN pip install -r requirements.txt
 COPY . /pythonProject12
 WORKDIR /pythonProject12
 
-RUN pytest --alluredir=/allure-results
+CMD ["pytest", "--alluredir=/allure-results"]
 
