@@ -2,7 +2,7 @@ version: '3'
 
 services:
   allure_test_results:
-    image: frankescobar/allure-docker-service-ui
+    image: frankescobar/allure-docker-service
     volumes:
       - ./allure-results:/allure-results
     ports:
@@ -35,3 +35,8 @@ services:
 networks:
   selenium:
     name: selenium
+
+build:
+  context: .
+  dockerfile: Dockerfile
+
