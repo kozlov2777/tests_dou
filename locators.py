@@ -27,7 +27,7 @@ class SalaryPagesLocators:
 
 
 class ForumsPagesLocators:
-    BUTTON_ADD_TOPIC = (By.XPATH, '/html/body/div[1]/div[4]/ul/li[5]/div/a')
+    BUTTON_ADD_TOPIC = (By.XPATH, '/html/body/div[1]/div[6]/ul/li[5]/div/a')
     TITLE_TOPIC = (By.XPATH, '//*[@id="txtTitle"]')
     IFRAME = (By.CLASS_NAME, 'tox-edit-area__iframe')
     TEXT_AREA = (By.XPATH, '//*[@id="tinymce"]')
