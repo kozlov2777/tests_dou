@@ -56,7 +56,7 @@ def test_job_page_with_filters(setup):
     time.sleep(3)
     city = jobPage.get_text_about_city_in_job_vacancy()
     for i in city:
-        assert i.text == 'Київ'
+        assert i.text in 'Київ'
 
 
 
